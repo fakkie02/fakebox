@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<head>
-    <title>fakebox</title>
-    <style>
-        .avatar {
-            vertical-align: left;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-    }
-    </style>    
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Box</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
-	  <h1>Fake News</h1>
-    <br>
+  <body>
+    <h1>Fake News</h1>
+    <br />
+    <div class="video_box">
+      <p class="title">Rahul's Rap</p>
+      <video controls class="vid1">
+        <source src="videos/rahul01.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-    <video width="320" height="240" controls>
-      <source src="rahul01.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-			
-    <br>
-    <img src="20230403_150045.jpg" class ="avatar">
-    <audio controls>
-        <source src="sid again 20.m4a">
-    </audio> 
-</body>
+    <br />
+    <div class="music_box">
+      <p class="title">Sid's Voiceover</p>
+      <img src="images/sid_img.jpg" class="avatar" />
+      <audio controls>
+        <source src="sounds/sid_voice01.m4a" />
+      </audio>
+    </div>
+  </body>
+</html>
